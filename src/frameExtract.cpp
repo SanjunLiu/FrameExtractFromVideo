@@ -19,7 +19,7 @@ using namespace cv;
 int main(int argc, char* argv[])
 {
     std::string VideoFile;
-    std::string SaveDir = "frameExtracted";
+    std::string SaveDir = "resultFrames";
 
     if (argc == 2){
         VideoFile = argv[1];
