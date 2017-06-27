@@ -32,7 +32,7 @@ int main(int argc, char* argv[])
         return -1;
     }
 
-    int fileMode = 06; // Read and write permision
+    int fileMode = F_OK|R_OK|W_OK ; // exist, Read and write permision
     if (0 != access(SaveDir.c_str(), fileMode)){
         if ( 0 != mkdir(SaveDir.c_str(), S_IRWXU|S_IRWXG|S_IROTH|S_IXOTH)){
             cout << "file " << SaveDir
